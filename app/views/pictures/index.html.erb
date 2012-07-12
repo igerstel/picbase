@@ -1,0 +1,11 @@
+<h1>Image Database</h1>
+
+<ul>
+	<% @urln.each_index do |i| %>
+		<li><a href="pictures/<%= @urln[i] %>"><%= @fulln[i] %></a></li>
+	<% end %>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p> Enter a URL </p>
