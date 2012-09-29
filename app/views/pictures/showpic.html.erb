@@ -1,12 +1,12 @@
 <h1>Pictures!</h1>
 
 <p></p>
-<%= @img %>
+
 <p></p>
 
 <ul>
 	<% @img.each do |i| %>
-		<img src="<%= i %> "/>
+		<img src="/imgbase/<%= @url %>/<%= i %>"/>
 	<% end %>
 </ul>
 <p></p>

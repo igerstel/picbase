@@ -2,10 +2,14 @@
 
 <ul>
 	<% @urln.each_index do |i| %>
-		<li><a href="pictures/<%= @urln[i] %>"><%= @fulln[i] %></a></li>
+		<li><a href="<%= @urln[i] %>"><%= @fulln[i] %></a></li>
 	<% end %>
 <p></p>
 <p></p>
 <p></p>
 <p></p>
-<p> Enter a URL </p>
+<p> Enter a name URL </p>
+<form action="form" method="post">
+	<input type="text" name="name">
+	<input type="submit" name="submit" value="Submit Form">
+</form>
